@@ -4,15 +4,14 @@
 
     --old-navbar-background: #12232E !important;
     --navbar-background: rgb(52, 58, 64) !important;
-    --baner: url(/images/123.png?67131937e55972c6c93b8ed21cd40761) !important;
-    --logo: url(/images/logo.png?d0beee430b85723df078c926f7b939cc) !important;
-    --background: #4DA8DA !important;
-    --second-background: rgb(1, 139, 211);
+    --baner: url("../images/123.png") !important;
+    --logo: url("../images/logo.png") !important;
+    --background: rgb(52, 58, 64) !important;
+    --second-background: rgb(52, 58, 64);
 
     --card-foreground: white;
-    --card-background: rgb(52, 58, 64) !important;
+    --card-background: #12232E !important;
 
     --row-background: rgb(255, 255, 255) !important;
     --footer-row-background: #12232E !important;
 }
-

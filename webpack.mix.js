@@ -9,9 +9,6 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/main.css', 'public/css', [
 
     ])
-    .postCss('resources/css/variable.css', 'public/css', [
-
-    ])
     .postCss('resources/css/cards.css', 'public/css', [
 
     ])

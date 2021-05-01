@@ -30,8 +30,10 @@ Excards.forEach(function (card) {
   var div = document.createElement("div");
   div.className = " col-xl-4 col-12 cards workCards";
   div.innerHTML = '<img  src="' + card.img + '" id="excard' + card.id + '" class="card-img-top" alt="Card image cap">' + '<div  class="card-body " id="workEx"><p class="card-text">' + card.name + "</p></div>";
-  style.sheet.insertRule("#excard" + card.id + " {content: url(" + card.img + ");}");
-  style.sheet.insertRule("#excard" + card.id + ":hover {content: url(" + card.img2 + ");}");
+  style.sheet.insertRule("#excard" + card.id + " {content: url(" + card.img + "); cursor:pointer;}");
+  div.addEventListener('click', function () {
+    alert(card.id);
+  });
   examples.append(div);
 });
 /******/ })()

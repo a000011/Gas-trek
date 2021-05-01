@@ -41,11 +41,8 @@ Excards.forEach((card) => {
     card.name +
     "</p></div>";
   style.sheet.insertRule(
-    "#excard" + card.id + " {content: url(" + card.img + ");}"
+    "#excard" + card.id + " {content: url(" + card.img + "); cursor:pointer;}"
   );
-
-  style.sheet.insertRule(
-    "#excard" + card.id + ":hover {content: url(" + card.img2 + ");}"
-  );
+  div.addEventListener('click', function(){alert(card.id)})
   examples.append(div);
 });
