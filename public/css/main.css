@@ -1,0 +1,221 @@
+body {
+    background-color: var(--background);
+}
+*{
+    border: 0;
+}
+#indexList{
+    padding: 0 !important;    
+    margin-top: 0 !important;
+}
+
+#banner{
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    background: white var(--baner) center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#banner h1{
+    position: absolute;
+    vertical-align: middle;
+    background-color: var(--background);
+    top:10%;
+    left:10%;
+    right:10%;
+    text-align: center;
+    font-size: 72px;
+    color: var(--main-font-color);  
+    -webkit-animation-duration: 2s;  
+            animation-duration: 2s;
+    -webkit-animation-name: slideinH1;
+            animation-name: slideinH1;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+
+@-webkit-keyframes slideinH1 {
+    0% {
+        font-size: 0px;
+        color: var(--background);
+    }
+    50% {
+        font-size: 72px;
+        color: var(--background);
+    }
+    100%{
+        color:var(--main-font-color);
+    }
+}
+
+
+@keyframes slideinH1 {
+    0% {
+        font-size: 0px;
+        color: var(--background);
+    }
+    50% {
+        font-size: 72px;
+        color: var(--background);
+    }
+    100%{
+        color:var(--main-font-color);
+    }
+}
+
+#banner h2{
+    position: absolute;
+    vertical-align: middle;
+    background-color: var(--background);
+    bottom:30%;
+    left:50%;
+    right:10%;
+    text-align: center;
+    font-size: 40px;
+    color: var(--main-font-color);  
+    -webkit-animation-duration: 2s;  
+            animation-duration: 2s;
+    -webkit-animation-name: slideinH2;
+            animation-name: slideinH2;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+@-webkit-keyframes slideinH2 {
+    0% {
+        font-size: 0px;
+        color: var(--background);
+    }
+    50% {
+        font-size: 40px;
+        color: var(--background);
+    }
+    100%{
+        color:var(--main-font-color);
+    }
+}
+
+@keyframes slideinH2 {
+    0% {
+        font-size: 0px;
+        color: var(--background);
+    }
+    50% {
+        font-size: 40px;
+        color: var(--background);
+    }
+    100%{
+        color:var(--main-font-color);
+    }
+}
+
+.logo{
+    width: 30%;
+    height: 75px;
+    background-image: var(--logo);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#servicesRow{
+    background-color: var(--second-background);
+    width: 100%;
+    margin: 0 auto !important;
+}
+
+#exampleRow{
+    background-color: var(--background);
+    width: 100%;
+    margin: 0 auto !important;
+
+}
+
+
+
+#services {
+    background-color: rgb(1, 139, 211);
+    margin: 0 auto !important;
+}
+
+#example{
+    background-color: var(--background);
+    margin: 0 auto !important;
+}
+
+
+
+#generic-price div{
+    background-color: var(--background);
+}
+
+.cards {
+    margin-bottom: 20px;
+}
+
+.prices img {
+    width: 100px;
+    height: 100px;
+}
+
+.prices h5 {
+    margin-top: 30px;
+}
+
+.est h2 {
+    color: white;
+}
+
+.est {
+    background-color: rgb(48, 139, 48) !important;
+    height: 50px;
+    padding-top: 5px;
+}
+
+.nema {
+    background-color: rgb(139, 48, 48) !important;
+    height: 50px;
+    padding-top: 5px;
+}
+
+#navadres {
+    line-height: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.zagolovoc {
+    margin: -10px;
+    margin-bottom: 10px;
+}
+
+
+
+#indexList {
+    margin-top: 20px;
+}
+
+#workEx {
+    background-color: rgb(231, 230, 230)
+}
+
+.workCards img {
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.workCards div {
+    border: 1px solid rgb(212, 212, 212);
+    border-top: 0px;
+}
+
+
+
+.row{
+    background-color: var(--row-background);
+    margin: 0 !important;
+}

@@ -1,0 +1,28 @@
+.navbar{
+    background-color: var(--old-navbar-background) !important;
+}
+
+.navbar-brand img {
+    height: 50px !important;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.navitems{
+    background-color: inherit;
+    color: rgb(204, 206, 207);
+
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.navitems:hover{
+    color: rgb(154, 157, 160);
+}

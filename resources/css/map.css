@@ -1,0 +1,22 @@
+
+#map {
+    overflow: hidden;
+}
+
+#mapHeader{
+    background-color: var(--second-background);
+    width: 100%;
+    margin: 0 auto !important;
+
+}
+
+#yndexMap .row{
+    margin-bottom: 0px !important;
+    background-color: var(--second-background);
+}
+
+
+#yndexMap{
+    background-color: var(--second-background);
+    margin-bottom: 0px !important;
+}

@@ -1,0 +1,17 @@
+:root{
+    --main-font-color: white;
+
+
+    --old-navbar-background: #12232E !important;
+    --navbar-background: rgb(52, 58, 64) !important;
+    --baner: url("images/123.png") !important;
+    --logo: url("images/logo.png") !important;
+    --background: #4DA8DA !important;
+    --second-background: rgb(1, 139, 211);
+
+    --card-foreground: white;
+    --card-background: rgb(52, 58, 64) !important;
+
+    --row-background: rgb(255, 255, 255) !important;
+    --footer-row-background: #12232E !important;
+}
