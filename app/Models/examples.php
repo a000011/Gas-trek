@@ -13,4 +13,20 @@ class examples extends Model
      * @var string
      */
     protected $table = 'examples';
+
+    /**
+    * this function spliting img string by ;
+    *
+    *@return array
+    */
+    static function parseImgs(string $str){
+        $imgs = array();
+        foreach (explode(';', $str) as $key => $value) {
+            if(!empty($value)){
+                array_push($imgs, $value);
+            }
+        }
+        return $imgs;
+    }
+
 }

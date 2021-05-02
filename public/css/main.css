@@ -4,6 +4,9 @@ body {
 *{
     border: 0;
 }
+h1{
+    color: var(--main-font-color) !important;
+}
 #indexList{
     padding: 0 !important;
     margin-top: 0 !important;

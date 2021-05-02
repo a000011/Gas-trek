@@ -18,9 +18,10 @@
         <link rel="stylesheet" type="text/css" href="../../css/pricelist.css">
         <link rel="stylesheet" type="text/css" href="../../css/footer.css">
         <link rel="stylesheet" type="text/css" href="../../css/map.css">
-
+        <script src="js/examples.js"></script>
     </head>
     <body>
+
         @include('inc.nav')
 
         @yield('content')

@@ -1,9 +1,7 @@
-    <?php
-        use Illuminate\Support\Facades\DB;
-        use App\Models\examples;
+<h1>example</h1>
+<?php
+    echo $data->car_name."<br>";
+    echo $data->price."<br>";
 
-        $examples = examples::where('car_name', 'camri')->get();
-        foreach ($examples as $ex) {
-            echo $ex->car_name;
-        }
-    ?>
+    var_dump($data->img);
+?>
