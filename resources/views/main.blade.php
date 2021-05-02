@@ -11,24 +11,18 @@
     </div>
 
     <div class="row" id="servicesRow">
-      <h1 class="col-md-12 col-xl-12 zagolovoc" align="center" id="servisHeader">
+      <h1 class="col-md-12 col-xl-12 my-3 zagolovoc" align="center" id="servisHeader">
         Услуги по ГБО
       </h1>
       <div id="services" align="center" class="row col-md-10 text-center"></div>
     </div>
     <div class="row" id="exampleRow">
-      <h1 class="col-md-12 col-xl-12 zagolovoc" align="center" id="">
-        Наши работы
-      </h1>
-      <div id="example" class="row col-md-10 text-center">
-          @include('inc.examples')
-      </div>
+
     </div>
   </div>
-  <script>
-    function redirect(id) {
-        document.location.href = '/example/'+id;
-    }
-  </script>
 
+
+    <script src="js/banner.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/autosize.js"></script>
 @endsection

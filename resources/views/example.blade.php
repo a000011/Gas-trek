@@ -1,7 +1,15 @@
-<h1>example</h1>
-<?php
-    echo $data->car_name."<br>";
-    echo $data->price."<br>";
+@extends('layouts.mainframe')
 
-    var_dump($data->img);
-?>
+@section('title','Gas-trek')
+
+@section('content')
+    <div class="row py-5" style="background-color: var(--background);   ">
+        @include('inc.examples')
+    </div>
+    <script>
+        function redirect(id) {
+            document.location.href = '/example/'+id;
+        }
+      </script>
+@endsection
+

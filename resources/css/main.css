@@ -4,9 +4,7 @@ body {
 *{
     border: 0;
 }
-h1{
-    color: var(--main-font-color) !important;
-}
+
 #indexList{
     padding: 0 !important;
     margin-top: 0 !important;
@@ -158,8 +156,7 @@ h1{
 }
 
 .zagolovoc {
-    margin: -10px;
-    margin-bottom: 10px;
+    color: var(--main-font-color) !important;
 }
 
 
@@ -184,6 +181,5 @@ h1{
 
 
 .row{
-    background-color: var(--row-background);
     margin: 0 !important;
 }
