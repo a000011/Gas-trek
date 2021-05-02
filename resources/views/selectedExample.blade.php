@@ -4,6 +4,7 @@
 
 @section('content')
     <style>
+
         #images{
         }
         img{
