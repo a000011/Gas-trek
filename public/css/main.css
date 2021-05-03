@@ -1,8 +1,14 @@
 body {
     background-color: var(--background);
 }
-*{
-    border: 0;
+.hList{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+ul{
+    color: var(--main-font-color);
+    list-style-type: none !important;
 }
 
 #indexList{
@@ -19,7 +25,7 @@ body {
     position: relative;
 }
 
-#banner h1{
+.bannerh1{
     position: absolute;
     vertical-align: middle;
     background-color: var(--background);
@@ -29,12 +35,18 @@ body {
     text-align: center;
     font-size: 72px;
     color: var(--main-font-color);
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-name: slideinH1;
-            animation-name: slideinH1;
-    -webkit-animation-direction: alternate;
-            animation-direction: alternate;
+    /* animation-duration: 2s;
+    animation-name: slideinH1;
+    animation-direction: alternate; */
+}
+
+#banner ul{
+    padding: 0 !important;
+    position: absolute;
+    top:50%;
+    left:10%;
+    color: var(--main-font-color);
+    background-color: var(--background);
 }
 
 
@@ -71,7 +83,7 @@ body {
     position: absolute;
     vertical-align: middle;
     background-color: var(--background);
-    bottom:30%;
+    top:50%;
     left:50%;
     right:10%;
     text-align: center;
