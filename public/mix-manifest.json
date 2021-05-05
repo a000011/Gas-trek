@@ -5,10 +5,11 @@
     "/js/scroll.js": "/js/scroll.js",
     "/js/service.js": "/js/service.js",
     "/js/examples.js": "/js/examples.js",
-    "/css/navbar.css": "/css/navbar.css",
     "/css/map.css": "/css/map.css",
-    "/css/cards.css": "/css/cards.css",
-    "/css/main.css": "/css/main.css",
     "/css/footer.css": "/css/footer.css",
-    "/css/pricelist.css": "/css/pricelist.css"
+    "/css/variables.css": "/css/variables.css",
+    "/css/cards.css": "/css/cards.css",
+    "/css/pricelist.css": "/css/pricelist.css",
+    "/css/navbar.css": "/css/navbar.css",
+    "/css/main.css": "/css/main.css"
 }

@@ -1,8 +1,0 @@
-.service-card{
-    color: var(--card-foreground);
-    height: 300px !important;
-    width: 30%;
-    vertical-align: middle;
-    display: table-cell;
-    background-color: var(--card-background);
-}

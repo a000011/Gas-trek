@@ -1,8 +1,8 @@
-.service-card{
-    color: var(--card-foreground);
-    height: 300px !important;
-    width: 30%;
-    vertical-align: middle;
-    display: table-cell;
-    background-color: var(--card-background);
+.service-card {
+  color: white;
+  height: 300px !important;
+  width: 30%;
+  vertical-align: middle;
+  display: table-cell;
+  background-color: #12232E;
 }

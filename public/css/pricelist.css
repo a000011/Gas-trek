@@ -1,7 +1,7 @@
 #priceList {
-    background-color: var(--background) !important;
+  background-color: #343a40 !important;
 }
 
-#priceList .row{
-    background-color: var(--background) !important;
+#priceList .row {
+  background-color: #343a40 !important;
 }

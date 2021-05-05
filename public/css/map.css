@@ -1,22 +1,19 @@
-
 #map {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-#mapHeader{
-    background-color: var(--second-background);
-    width: 100%;
-    margin: 0 auto !important;
-
+#mapHeader {
+  background-color: #343a40;
+  width: 100%;
+  margin: 0 auto !important;
 }
 
-#yndexMap .row{
-    margin-bottom: 0px !important;
-    background-color: var(--second-background);
+#yndexMap .row {
+  margin-bottom: 0px !important;
+  background-color: #343a40;
 }
 
-
-#yndexMap{
-    background-color: var(--second-background);
-    margin-bottom: 0px !important;
+#yndexMap {
+  background-color: #343a40;
+  margin-bottom: 0px !important;
 }
