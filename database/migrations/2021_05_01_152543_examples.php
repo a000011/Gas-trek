@@ -28,7 +28,6 @@ class Examples extends Migration
      */
     public function down()
     {
-        echo '========================';
         Schema::drop('examples');
     }
 }

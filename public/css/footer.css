@@ -1,7 +1,7 @@
-#footer{
-    background-color: var(--footer-row-background) !important;
+#footer {
+  background-color: var(--footer-row-background) !important;
 }
 
-#footer .row{
-    background-color: var(--footer-row-background);
+#footer .row {
+  background-color: var(--footer-row-background);
 }

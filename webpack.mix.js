@@ -12,7 +12,7 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/cards.css', 'public/css', [
 
     ])
-    .postCss('resources/css/footer.css', 'public/css', [
+    .sass('resources/css/footer.sass', 'public/css', [
 
     ])
     .postCss('resources/css/map.css', 'public/css', [
@@ -24,3 +24,4 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/pricelist.css', 'public/css', [
 
     ]);
+//mix.sass('resources/sass/app.scss', 'public/css');
