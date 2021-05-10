@@ -1,10 +1,6 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/js/autosize.js": "/js/autosize.js",
     "/js/banner.js": "/js/banner.js",
     "/js/scroll.js": "/js/scroll.js",
-    "/js/service.js": "/js/service.js",
-    "/js/examples.js": "/js/examples.js",
     "/css/map.css": "/css/map.css",
     "/css/footer.css": "/css/footer.css",
     "/css/variables.css": "/css/variables.css",

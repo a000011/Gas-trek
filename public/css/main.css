@@ -2,6 +2,44 @@ body {
   background-color: #343a40;
 }
 
+.examples {
+  padding: 0 50px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.examples input {
+  background-color: #018BD3;
+  border-radius: 5px;
+  border: 0;
+  margin: 0 auto !important;
+  font-weight: bold;
+  height: 40px;
+}
+
+.example-title {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#examples {
+  margin-bottom: 100px;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 50px !important;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
 .hList {
   margin: 0 !important;
   padding: 0 !important;
@@ -19,21 +57,33 @@ ul {
 
 #banner {
   width: 100%;
+  padding: 0 10% !important;
   margin: 0;
   margin-top: 0;
   background: white url(/images/baner2.jpg?883d22c5534ac4afb736878204b36687) center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  overflow: hidden;
+}
+
+.baner-element {
+  background-color: #343a40;
+  margin: 50px 0px;
+  width: 300px;
+}
+
+.baner-element h1 {
+  text-align: center;
+  color: white;
 }
 
 .bannerh1 {
-  position: absolute;
   vertical-align: middle;
   background-color: #343a40;
-  top: 10%;
-  left: 10%;
-  right: 10%;
   text-align: center;
+  margin-top: 5%;
   font-size: 72px;
   color: white;
 }
@@ -132,32 +182,18 @@ ul {
 
 #servicesRow {
   background-color: #343a40;
-  width: 100%;
-  margin: 0 auto !important;
-}
-
-#exampleRow {
-  background-color: #343a40;
-  width: 100%;
-  margin: 0 auto !important;
+  padding: 0 !important;
 }
 
 #services {
   background-color: #343a40;
+  padding: 0 !important;
   margin: 0 auto !important;
-}
-
-#example {
-  background-color: #343a40;
-  margin: 0 auto !important;
+  margin-top: 200px !important;
 }
 
 #generic-price div {
   background-color: #343a40;
-}
-
-.cards {
-  margin-bottom: 20px;
 }
 
 .prices img {
@@ -201,15 +237,6 @@ ul {
 
 #workEx {
   background-color: #e7e6e6;
-}
-
-.workCards img {
-  border: 1px solid #d4d4d4;
-}
-
-.workCards div {
-  border: 1px solid #d4d4d4;
-  border-top: 0px;
 }
 
 .row {

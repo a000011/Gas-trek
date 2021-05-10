@@ -10,6 +10,5 @@
         function redirect(id) {
             document.location.href = '/example/'+id;
         }
-      </script>
+    </script>
 @endsection
-
