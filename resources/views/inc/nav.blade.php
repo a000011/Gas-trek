@@ -1,3 +1,10 @@
+<div class="d-flex justify-content-end" id="info">
+        <h4>
+            Тольятти ул. Ларина 145/1<br>
+        </h4>
+
+</div>
+
 <nav class="navbar navbar-defaul navbar-expand-md navbar-inverse navbar-dark ">
     <a class="navbar-brand" href="{{ route('main') }}">
         <img src="/images/logo.png" alt="">

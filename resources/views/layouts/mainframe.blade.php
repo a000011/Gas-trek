@@ -10,7 +10,7 @@
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-        <!-- my scc -->
+        <!-- my css -->
         <link rel="stylesheet" type="text/css" href="../../css/main.css">
         <link rel="stylesheet" type="text/css" href="../../css/navbar.css">
         <link rel="stylesheet" type="text/css" href="../../css/cards.css">
@@ -34,6 +34,11 @@
 
         @include('inc.foooter')
 
+        <a id="call" href="tel:+79270273293" role="button">
+            <span class="material-icons">
+                call
+            </span>
+        </a>
     </body>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

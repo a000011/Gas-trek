@@ -25,23 +25,31 @@
             </div>
         </div>
 
-            <div id="services" align="center" class="d-flex justify-content-center flex-wrap">
-                @foreach ($services as $serv)
-                    <div class="service-card" >
+
+
+        <div id="services" align="center" class="d-flex justify-content-center flex-wrap">
+            @foreach ($services as $serv)
+                <div class="service-card" >
+                    <div class="card-content">
                         <span class="material-icons">
                             {{ $serv['icon'] }}
                         </span>
                         <h1>{{ $serv['text'] }}</h1>
                     </div>
-                @endforeach
-            </div>
-        <div >
+                </div>
+            @endforeach
+        </div>
+
+
+
         <div class="d-flex justify-content-center flex-wrap examples">
             <div class="example-title" align="center">
                 <h1>Примеры работ</h1>
-                <input type="Submit" value="Смотреть все >>">
+                <form action="/example" method="post">
+                    <input type="Submit" value="Смотреть все >>">
+                </form>
             </div>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center flex-wrap">
                 @isset($examples)
                     @if(count($examples)>3)
                         @for ($i = 0; $i < 3; $i++)
@@ -73,6 +81,17 @@
                 @endisset
             </div>
         </div>
+
+
+        <div class=" advantages">
+            {{-- @for ($i=0; $i<3; $i++)
+            <div class="advantage-card">
+            </div>
+            @endfor --}}
+            @foreach ($advantages as $adv)
+                <h3>{{ $adv }}</h3>
+            @endforeach
+
         </div>
     </div>
     <script>

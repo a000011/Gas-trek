@@ -18,6 +18,18 @@ class mainController extends Controller {
 			['text' => 'Ремонт ГБО', 'icon' => 'home_repair_service'],
 		];
 
-		return view('main', ['examples' => $examples, 'services' => $services]);
+		$advantages = [
+			'Заправка в два раза дешевле',
+			'Износ двигателя меньше',
+			'Автономный пробег больше',
+			'Выхлоп становится чище',
+			'Ресурс двигателя увеличивается',
+		];
+
+		return view('main', [
+			'examples' => $examples,
+			'services' => $services,
+			'advantages' => $advantages,
+		]);
 	}
 }

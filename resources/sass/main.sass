@@ -5,8 +5,8 @@ body
 
 .examples
     padding: 0 50px
-    color: $main-font-color
     margin-bottom: 100px
+    color: $main-font-color
 
 .examples
     input
@@ -17,12 +17,13 @@ body
         font-weight: bold
         height: 40px
 
-.example-title
-    display: table-cell
-    vertical-align: middle
+.examples
+    input:hover
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
-#examples
-    margin-bottom: 100px
+.example-title
+    margin-top: auto
+    margin-bottom: auto
 
 .material-icons
     font-family: 'Material Icons'
@@ -51,6 +52,20 @@ ul
     padding: 0 !important
     margin-top: 0 !important
 
+#call
+    width: 150px
+    height: 150px
+    background-color: #172a36
+    text-decoration: none
+    position: fixed
+    right: 10px
+    bottom: 10px
+    border-radius: 50%
+    border: 10px solid #172a36
+
+#call
+    span
+        font-size: 130px !important
 
 #banner
     width: 100%
@@ -148,7 +163,8 @@ ul
     background-color: $background
     padding: 0 !important
     margin: 0 auto !important
-    margin-top: 200px !important
+    margin-top: 100px !important
+    margin-bottom: 100px !important
 
 
 #generic-price
@@ -193,7 +209,13 @@ ul
 #workEx
     background-color: rgb(231, 230, 230)
 
-
+.advantages
+    height: 500px
+    overflow: hidden
+    background-image: url(/images/resources/motor.jpg)
+    margin: 0 150px
+    margin-bottom: 150px
+    color: $main-font-color
 
 .row
     margin: 0 !important

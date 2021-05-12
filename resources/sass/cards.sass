@@ -1,14 +1,19 @@
 @import variables
 
 .service-card
-    display: table-cell
-    text-align: center
-    vertical-align: middle
     color: $card-foreground
-    height: 350px
+    height: 250px
     width: 350px
     background-color: $card-background
     margin: 20px 50px
+    display: flex
+    align-items: center
+    cursor: pointer
+
+.service-card:hover
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+.card-content
 
 .service-card
     span
@@ -36,3 +41,12 @@
     div
         border: 1px solid rgb(212, 212, 212)
         border-top: 0px
+
+.workCards:hover
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+.advantage-card
+    width:250px
+    height: 300px
+    border: 1px solid green
+    margin: 20px
