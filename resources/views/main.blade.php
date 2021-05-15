@@ -82,14 +82,14 @@
             </div>
         </div>
 
+        {{-- реклама гбо --}}
 
-        <div class=" advantages">
-            {{-- @for ($i=0; $i<3; $i++)
-            <div class="advantage-card">
-            </div>
-            @endfor --}}
+        <div class=" advantages d-flex justify-content-center flex-wrap">
+
             @foreach ($advantages as $adv)
+            <div class="advantage-card" align="center ">
                 <h3>{{ $adv }}</h3>
+            </div>
             @endforeach
 
         </div>

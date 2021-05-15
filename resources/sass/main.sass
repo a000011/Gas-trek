@@ -1,4 +1,6 @@
+@import animations
 @import variables
+
 
 body
     background-color:  $background
@@ -56,12 +58,14 @@ ul
     width: 150px
     height: 150px
     background-color: #172a36
+    box-shadow: 0 0 0 0 #172a36
     text-decoration: none
     position: fixed
-    right: 10px
-    bottom: 10px
+    right: 30px
+    bottom: 40px
     border-radius: 50%
     border: 10px solid #172a36
+    animation: pulse 2s ease-in-out infinite
 
 #call
     span
@@ -108,16 +112,6 @@ ul
     left:10%
     color: $main-font-color
     background-color: $background
-
-@keyframes slideinH1
-    0%
-        font-size: 0px
-        color: $background
-    50%
-        font-size: 72px
-        color: $background
-    100%
-        color: $main-font-color
 
 #banner
     h2
@@ -210,7 +204,7 @@ ul
     background-color: rgb(231, 230, 230)
 
 .advantages
-    height: 500px
+    height: auto
     overflow: hidden
     background-image: url(/images/resources/motor.jpg)
     margin: 0 150px
