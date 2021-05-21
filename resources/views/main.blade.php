@@ -57,7 +57,7 @@
                             @isset($examples[$i]->img[0])
                                 <img  src="/images/examples/{{ $examples[$i]->img[0] }}" class="card-img-top" alt="Card image cap">
                             @endisset
-                            <div  class="card-body " id="workEx">
+                            <div  class="card-body bg-dark" id="workEx">
                                 <p class="card-text">
                                     {{ $examples[$i]->car_name }}
                                 </p>
@@ -84,15 +84,15 @@
 
         {{-- реклама гбо --}}
 
-        <div class=" advantages d-flex justify-content-center flex-wrap">
+        {{-- <div class="advantages">
 
             @foreach ($advantages as $adv)
-            <div class="advantage-card" align="center ">
+            <div class="" align="center ">
                 <h3>{{ $adv }}</h3>
             </div>
             @endforeach
 
-        </div>
+        </div> --}}
     </div>
     <script>
         function redirect(id) {

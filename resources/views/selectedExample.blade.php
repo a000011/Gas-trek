@@ -14,6 +14,12 @@
         h1, h2{
             color: var(--main-font-color);
         }
+        *:not(.call){
+            color: white;
+        }
+        span{
+            color: #007bff ;
+        }
     </style>
     <div class="row py-3">
         <div id="images" class="col-md-6">
@@ -23,7 +29,7 @@
             @endforeach
         </div>
         <div class="col-md-6">
-            <h1 class="my-5">Установка на {{ $data->car_name }}</h1>
+            <h1 class="my-5">Установка ГБО на {{ $data->car_name }}</h1>
             <h2 class="my-5">Клиент заплатил {{ $data->price }} руб.</h2>
         </div>
     </div>

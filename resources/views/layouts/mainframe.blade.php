@@ -34,8 +34,8 @@
 
         @include('inc.foooter')
 
-        <a id="call" href="tel:+79270273293" role="button">
-            <span class="material-icons">
+        <a id="call"  href="tel:+79270273293" role="button">
+            <span  class="material-icons call">
                 call
             </span>
         </a>
