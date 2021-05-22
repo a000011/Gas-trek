@@ -18,7 +18,7 @@ class adminController extends Controller {
 		if ($admin->count() == 0) {
 			return view('adminAuth', ['error' => 'auth']);
 		} else {
-			return 'nice';
+			return view('adminPanel');
 		}
 	}
 }

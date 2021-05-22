@@ -14,6 +14,7 @@ class Admin extends Migration {
 		Schema::create('admin', function (Blueprint $table) {
 			$table->string('login');
 			$table->string('password');
+			$table->string('remember_token');
 		});
 	}
 
