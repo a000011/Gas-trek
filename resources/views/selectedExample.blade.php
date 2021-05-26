@@ -23,9 +23,9 @@
     </style>
     <div class="row py-3">
         <div id="images" class="col-md-6">
-            <img id="mainImg" class="col-12" src="/images/examples/{{ $data->img[0] }}">
+            <img id="mainImg" class="col-12" src="{{ $data->img[0] }}">
             @foreach ($data->img as $image)
-                <img class="col-2 my-2" onmouseover="changeImg(this);" src="/images/examples/{{ $image }}">
+                <img class="col-2 my-2" onmouseover="changeImg(this);" src="../{{ $image }}">
             @endforeach
         </div>
         <div class="col-md-6">

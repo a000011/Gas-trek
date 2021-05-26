@@ -20,7 +20,7 @@
 
         <div class="form-group">
             <label for="name">Название машины</label>
-            <input type="text" name="car-name" class="form-control" id="name" placeholder="Название машины">
+            <input type="text" name="car_name" class="form-control" id="name" placeholder="Название машины">
         </div>
 
         <div class="form-group">
@@ -30,7 +30,7 @@
 
         <div class="form-group">
             <label for="file">Загрузите фотографии  </label>
-            <input type="file" name="photos" class="form-control-file"  id="file">
+            <input type="file" name="photos[]" class="form-control-file" multiple id="file">
         </div>
 
         <button type="submit" class="btn btn-primary">Добавить работу</button>
