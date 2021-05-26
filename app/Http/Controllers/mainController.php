@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\examples;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class mainController extends Controller {
 	function entrance() {
@@ -25,11 +27,11 @@ class mainController extends Controller {
 			'Выхлоп становится чище',
 			'Ресурс двигателя увеличивается',
 		];
-
-		return view('main', [
-			'examples' => $examples,
-			'services' => $services,
-			'advantages' => $advantages,
-		]);
+		return Auth::user();
+		// return view('main', [
+		// 	'examples' => $examples,
+		// 	'services' => $services,
+		// 	'advantages' => $advantages,
+		// ]);
 	}
 }

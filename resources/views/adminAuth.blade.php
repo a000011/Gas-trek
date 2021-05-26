@@ -16,8 +16,8 @@
         @endif
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="exampleInputEmail1">login</label>
-            <input type="text" name="login" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1">name</label>
+            <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
