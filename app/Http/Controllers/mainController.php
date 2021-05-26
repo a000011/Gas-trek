@@ -27,11 +27,10 @@ class mainController extends Controller {
 			'Выхлоп становится чище',
 			'Ресурс двигателя увеличивается',
 		];
-		return Auth::user();
-		// return view('main', [
-		// 	'examples' => $examples,
-		// 	'services' => $services,
-		// 	'advantages' => $advantages,
-		// ]);
+		return view('main', [
+			'examples' => $examples,
+			'services' => $services,
+			'advantages' => $advantages,
+		]);
 	}
 }

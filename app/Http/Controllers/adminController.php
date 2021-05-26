@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -25,7 +24,6 @@ class adminController extends Controller {
 	}
 
 	function addExample(Request $request) {
-		// $path = $request->file('photos')->store('TEST123');
 		$path = 'storage/images/' . $request->file('photos')->store('public');
 		return view('adminPanel');
 	}

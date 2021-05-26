@@ -17,6 +17,7 @@ Route::any('/address', function () {
 })->name('address');
 
 Route::get('/login', [adminController::class, 'auth'])->name('login');
+
 Route::post('/admin', [adminController::class, 'checkAuth'])->name('auth');
 
 Route::middleware(['auth'])->group(function () {
