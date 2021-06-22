@@ -7,7 +7,7 @@
         <div id="banner" class="banner">
             <h1 class="bannerh1">Установка ГБО в Тольятти</h1>
             {{-- <h2>ул. Ларина 145/1<br />89278998878</h2> --}}
-            <div class="d-flex justify-content-between flex-wrap">
+            <div class="d-flex justify-content-center banner-card">
                 <div class="baner-element">
                     <img class="col-12" src="/images/icons/savings_white.svg">
                     <h1>Низкая цена</h1>
@@ -26,10 +26,11 @@
         </div>
 
 
+        {{--  services block  --}}
 
-        <div id="services" align="center" class="d-flex justify-content-center flex-wrap">
+        <div id="services" align="center" class="d-flex justify-content-center col-12">
             @foreach ($services as $serv)
-                <div class="service-card" >
+                <div class="service-card col-3" >
                     <div class="card-content">
                         <span class="material-icons">
                             {{ $serv['icon'] }}
@@ -40,7 +41,15 @@
             @endforeach
         </div>
 
+        {{--  news block  --}}
 
+        <div id="stonk">
+            <div class="news-img d-flex justify-content-center">
+                <img src="/images/news/brc.jpg">
+            </div>
+        </div>
+
+        {{--  examples block  --}}
 
         <div class="d-flex justify-content-center flex-wrap examples">
             <div class="example-title" align="center">
@@ -65,6 +74,7 @@
                         </div>
                         @endfor
                     @else
+
                         @foreach ($examples as $ex)
                             <div  onclick="redirect( {{ $ex->id }} )" class="cards workCards">
                                 @isset($ex->img[0])

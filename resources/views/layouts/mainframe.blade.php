@@ -24,6 +24,9 @@
         *{
             font-family: 'Montserrat', 'Roboto', sans-serif;
         }
+        h1{
+            font-size: 4vh;
+        }
         </style>
     </head>
     <body>
