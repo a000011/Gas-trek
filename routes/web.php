@@ -25,6 +25,6 @@ Route::middleware(['auth'])->group(function () {
 		return view('adminPanel');
 	})->name('adminPanel');
 	Route::post('/admin_panel', [adminController::class, 'addExample'])->name(
-		'adminPanel',
+		'adminPanel'
 	);
 });

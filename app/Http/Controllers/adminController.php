@@ -49,8 +49,8 @@ class adminController extends Controller {
 					$path .
 					'storage/images/' .
 					$image->storeAs(
-						'public',
-						++$num . '.' . $image->extension(),
+						$request->input('car_name'),
+						++$num . '.' . $image->extension()
 					) .
 					';';
 			}

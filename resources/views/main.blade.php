@@ -25,7 +25,6 @@
             </div>
         </div>
 
-
         {{--  services block  --}}
 
         <div id="services" align="center" class="d-flex justify-content-center col-12">
@@ -60,11 +59,11 @@
             </div>
             <div class="d-flex justify-content-center flex-wrap">
                 @isset($examples)
-                    @if(count($examples)>3)
-                        @for ($i = 0; $i < 3; $i++)
+                    @if(count($examples)>2)
+                        @for ($i = 0; $i < 2; $i++)
                         <div  onclick="redirect( {{ $examples[$i]->id }} )" class="cards workCards">
                             @isset($examples[$i]->img[0])
-                                <img  src="/images/examples/{{ $examples[$i]->img[0] }}" class="card-img-top" alt="Card image cap">
+                                <img  src="../{{ $examples[$i]->img[0] }}" class="card-img-top" alt="Card image cap">
                             @endisset
                             <div  class="card-body bg-dark" id="workEx">
                                 <p class="card-text">
