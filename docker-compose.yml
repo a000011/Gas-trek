@@ -1,0 +1,29 @@
+version: "3"
+services:
+  db:
+    image: mysql:8
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3307:3306
+    volumes:
+      - dbdata:/var/lib/mysql
+  php:
+    image: "php:7.4"
+    container_name: laravel_container
+    ports:
+      - 8000:8000
+    command: "php artisan serve --host=0.0.0.0"
+    volumes:
+      - ./Gas-trek:/home
+    working_dir: /home/
+  cmpsr:
+    image: "composer"
+    container_name: composer
+    volumes:
+      - ./Gas-trek:/home
+    working_dir: /home/Gas-trek
+    command: composer i
+volumes:
+  dbdata:
