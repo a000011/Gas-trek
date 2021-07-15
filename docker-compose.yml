@@ -3,6 +3,8 @@ services:
   db:
     image: mysql:8
     container_name: mysql_db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
     ports:
@@ -10,19 +12,20 @@ services:
     volumes:
       - dbdata:/var/lib/mysql
   php:
-    image: "php:7.4"
+    image: php:7.4
     container_name: laravel_container
     ports:
       - 8000:8000
-    command: "php artisan serve --host=0.0.0.0"
+    command: php artisan serve --host=0.0.0.0
+
     volumes:
-      - ./Gas-trek:/home
-    working_dir: /home/
+      - ./:/home
+    working_dir: /home/Gas-trek
   cmpsr:
-    image: "composer"
-    container_name: composer
+    image: composer
+    container_name: cmpsr
     volumes:
-      - ./Gas-trek:/home
+      - ./:/home
     working_dir: /home/Gas-trek
     command: composer i
 volumes:
