@@ -91,6 +91,8 @@
             </div>
         </div>
 
+        {{--стена с записями--}}
+        @include('inc.whall')
         {{-- реклама гбо --}}
 
         {{-- <div class="advantages">

@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\examples;
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
+use App\Models\Whall;
 
 class mainController extends Controller {
 	function entrance() {
@@ -27,10 +25,14 @@ class mainController extends Controller {
 			'Выхлоп становится чище',
 			'Ресурс двигателя увеличивается',
 		];
+
+		$records = Whall::all();
+
 		return view('main', [
 			'examples' => $examples,
 			'services' => $services,
 			'advantages' => $advantages,
+            'records' => $records,
 		]);
 	}
 }
