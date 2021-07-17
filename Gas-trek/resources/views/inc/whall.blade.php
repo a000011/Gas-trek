@@ -1,6 +1,10 @@
-<div class="d-flex justify-content-center flex-wrap">
+<center>
     @foreach($records as $record)
-        <h2 class="whall_text">{{$record->text}}</h2>
-        <img class="whall_img" src="./{{$record->img_src}}">
+        <div class="record">
+            @if($record->text != '')
+                <h3 class="whall_text">{{$record->text}}</h3>
+            @endif
+            <img class="whall_img" src="./{{$record->img_src}}">
+        </div>
     @endforeach
-</div>
+</center>

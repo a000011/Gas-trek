@@ -27,4 +27,7 @@ Route::middleware(['auth'])->group(function () {
 	Route::post('/admin_panel', [adminController::class, 'addExample'])->name(
 		'adminPanel'
 	);
+    Route::get('/admin_panel/add_record', function () {
+        return view('adminPanel');
+    })->name('add_record');
 });

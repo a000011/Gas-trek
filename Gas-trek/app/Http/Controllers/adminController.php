@@ -5,10 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use App\Models\User;
-use Illuminate\Auth\Middleware\Authenticate;
-use Illuminate\Http\File;
-use Illuminate\Support\Facades\Storage;
 use App\Models\examples;
 use Illuminate\Support\Facades\Validator;
 

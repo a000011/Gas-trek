@@ -42,11 +42,11 @@
 
         {{--  news block  --}}
 
-        <div id="stonk">
-            <div class="news-img d-flex justify-content-center">
-                <img src="/images/news/brc.jpg">
-            </div>
-        </div>
+{{--        <div id="stonk">--}}
+{{--            <div class="news-img d-flex justify-content-center">--}}
+{{--                <img src="/images/news/brc.jpg">--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
         {{--  examples block  --}}
 

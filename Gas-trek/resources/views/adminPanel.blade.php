@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-dark">
+    @include('inc.admin_nav')
     <h1 align="center">Панель администратора</h1>
     <center>
         <h3 style="background-color:rgb(143, 14, 14);">
