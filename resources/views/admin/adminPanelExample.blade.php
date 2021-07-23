@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>админ-панель</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        *{
-            color: white;
-        }
-    </style>
-</head>
+@extends('layouts.adminFrame')
 
-<body class="bg-dark">
-    @include('inc.admin_nav')
+@section('content')
     <h1 align="center">Панель администратора</h1>
     <center>
         <h3 style="background-color:rgb(143, 14, 14);">
@@ -55,7 +41,4 @@
             <button type="submit" class="btn btn-primary">Добавить работу</button>
         </form>
     </center>
-</body>
-</html>
-
-
+@endsection

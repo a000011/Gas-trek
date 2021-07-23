@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 
 class adminController extends Controller {
 	function auth(Request $request) {
-		return view('adminAuth');
+		return view('admin.adminAuth');
 	}
 
 	function checkAuth(Request $request) {
@@ -29,7 +29,7 @@ class adminController extends Controller {
 		]);
 		if ($validator->fails()) {
 			$errors = $validator->errors();
-			return view('adminPanel', [
+			return view('admin.adminPanelExample', [
 				'errors' => $errors,
 				'translate' => [
 					'car_name' => 'Название',
@@ -55,7 +55,7 @@ class adminController extends Controller {
 			$example->price = $request->input('price');
 			$example->img = $path;
 			$example->save();
-			return view('adminPanel');
+			return view('admin.adminPanelExample');
 		}
 	}
 }

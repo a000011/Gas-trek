@@ -22,12 +22,14 @@ Route::post('/admin', [adminController::class, 'checkAuth'])->name('auth');
 
 Route::middleware(['auth'])->group(function () {
 	Route::get('/admin_panel', function () {
-		return view('adminPanel');
+		return view('admin.adminPanelExample');
 	})->name('adminPanel');
-	Route::post('/admin_panel', [adminController::class, 'addExample'])->name(
-		'adminPanel'
-	);
+
     Route::get('/admin_panel/add_record', function () {
-        return view('adminPanel');
+        return view('admin.adminPanelWhall');
     })->name('add_record');
+
+	Route::post('/admin_panel', [adminController::class, 'addExample'])->name(
+		'adminPanelExample'
+	);
 });
