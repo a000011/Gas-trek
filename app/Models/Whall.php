@@ -15,4 +15,6 @@ class Whall extends Model
      * @var string
      */
     protected $table = 'whall';
+
+    public $timestamps = false;
 }

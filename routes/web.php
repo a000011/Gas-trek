@@ -25,11 +25,15 @@ Route::middleware(['auth'])->group(function () {
 		return view('admin.adminPanelExample');
 	})->name('adminPanel');
 
+    Route::post('/admin_panel', [adminController::class, 'addExample'])->name(
+        'adminPanelExample'
+    );
+
     Route::get('/admin_panel/add_record', function () {
         return view('admin.adminPanelWhall');
     })->name('add_record');
 
-	Route::post('/admin_panel', [adminController::class, 'addExample'])->name(
-		'adminPanelExample'
-	);
+    Route::post('/admin_panel/add_record', [adminController::class, 'addRecord'])->name(
+        'adminPanelExample'
+    );
 });

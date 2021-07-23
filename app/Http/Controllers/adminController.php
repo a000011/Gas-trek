@@ -3,10 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\admin;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\examples;
+use App\Models\Whall;
 use Illuminate\Support\Facades\Validator;
+use Carbon\Carbon;
 
 class adminController extends Controller {
 	function auth(Request $request) {
@@ -43,9 +46,9 @@ class adminController extends Controller {
 			foreach ($images as $image) {
 				$path =
 					$path .
-					'storage/images/' .
+					'storage/' .
 					$image->storeAs(
-						$request->input('car_name'),
+						'images/'.$request->input('car_name'),
 						++$num . '.' . $image->extension()
 					) .
 					';';
@@ -58,4 +61,38 @@ class adminController extends Controller {
 			return view('admin.adminPanelExample');
 		}
 	}
+
+	function addRecord(Request $request){
+        $curentDate = Carbon::now()->toDateTimeString();
+
+        $validator = Validator::make($request->all(), [
+            'record_text' => 'required|Min:4',
+        ]);
+        if ($validator->fails()) {
+            $errors = $validator->errors();
+            return view('admin.adminPanelWhall', [
+                'errors' => $errors,
+                'translate' => [
+                    'record_text' => 'Название',
+                ],
+            ]);
+        } else {
+            $image = $request->file('photo');
+            $path = '';
+                $path =
+                    $path .
+                    'storage/' .
+                    $image->storeAs(
+                        'whall/',
+                        $curentDate. '.' . $image->extension()
+                    );
+            $record = new Whall();
+            $record->text = $request->input('record_text');
+            $record->img_src = $path;
+            $record->date = $curentDate;
+            $record->save();
+            return view('admin.adminPanelWhall');
+
+        }
+    }
 }

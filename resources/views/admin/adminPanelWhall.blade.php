@@ -24,8 +24,8 @@
             {{ csrf_field() }}
 
             <div class="form-group">
-                <label for="name">Название машины</label>
-                <input type="text" name="car_name" class="form-control" id="name" placeholder="Название машины">
+                <label for="name">Текст поста</label>
+                <input type="text" name="record_text" class="form-control" id="name" placeholder="Название машины">
             </div>
 
             <div class="form-group">
