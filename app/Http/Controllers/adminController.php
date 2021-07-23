@@ -92,7 +92,6 @@ class adminController extends Controller {
             $record->date = $curentDate;
             $record->save();
             return view('admin.adminPanelWhall');
-
         }
     }
 }
