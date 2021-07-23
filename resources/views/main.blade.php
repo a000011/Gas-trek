@@ -53,7 +53,7 @@
         <div class="d-flex justify-content-center flex-wrap examples">
             <div class="example-title" align="center">
                 <h1>Примеры работ</h1>
-                <form action="/example" method="post">
+                <form action="/example" method="get">
                     <input type="Submit" value="Смотреть все >>">
                 </form>
             </div>

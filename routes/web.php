@@ -34,6 +34,6 @@ Route::middleware(['auth'])->group(function () {
     })->name('add_record');
 
     Route::post('/admin_panel/add_record', [adminController::class, 'addRecord'])->name(
-        'adminPanelExample'
+        'adminPanelWhall'
     );
 });

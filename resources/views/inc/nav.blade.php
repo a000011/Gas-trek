@@ -2,7 +2,6 @@
         <h4>
             Тольятти ул. Ларина 145/1<br>
         </h4>
-
 </div>
 
 <nav class="navbar navbar-defaul navbar-expand-md navbar-inverse navbar-dark ">
@@ -14,9 +13,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <div class="navbar-nav">
-            <a class="nav-item nav-link" href="{{ route ('main') }}">Главная</a>
-            <a class="nav-item nav-link" href="{{ route ('examples') }}">Наши работы</a>
+            <a class="nav-item nav-link" href="{{ route('main') }}">Главная</a>
+            <a class="nav-item nav-link" href="{{ route('examples') }}">Наши работы</a>
             <a class="nav-item nav-link" href="{{ route('address') }}">Наш адрес</a>
+            @auth
+                <a class="nav-item nav-link" href="{{ route('adminPanel') }}">Админ панель</a>
+            @endauth
         </div>
     </div>
 </nav>

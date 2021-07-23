@@ -1,6 +1,6 @@
 @isset($examples)
     @foreach ($examples as $ex)
-        <div style="cursor: pointer;" onclick="redirect( {{ $ex->id }} )" class="cards col-xl-3 col-12 examplesCards">
+        <div style="cursor: pointer;" onclick="redirect( {{ $ex->id }} )" class="cards col-xl-3 col-12 workCards examplesCards">
             @isset($ex->img[0])
                 <img src="{{ $ex->img[0] }}" class="card-img-top" alt="Card image cap">
             @endisset
