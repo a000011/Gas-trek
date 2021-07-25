@@ -14,7 +14,7 @@
 </head>
 
 <body class="bg-dark">
-@include('inc.admin_nav')
+@include('admin.admin_nav')
 
 @yield('content')
 
