@@ -21,14 +21,14 @@
         <link rel="stylesheet" type="text/css" href="../../css/rec.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-        *{
-            font-family: 'Montserrat', 'Roboto', sans-serif;
-        }
-        h1{
-            font-size: 4vh;
-        }
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+            *{
+                font-family: 'Montserrat', 'Roboto', sans-serif;
+            }
+            h1{
+                font-size: 4vh;
+            }
         </style>
     </head>
     <body>

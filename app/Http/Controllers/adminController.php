@@ -79,13 +79,13 @@ class adminController extends Controller {
         } else {
             $image = $request->file('photo');
             $path = '';
-                $path =
-                    $path .
-                    'storage/' .
-                    $image->storeAs(
-                        'whall/',
-                        $curentDate. '.' . $image->extension()
-                    );
+            $path =
+                $path .
+                'storage/' .
+                $image->storeAs(
+                    'whall/',
+                    $curentDate. '.' . $image->extension()
+                );
             $record = new Whall();
             $record->text = $request->input('record_text');
             $record->img_src = $path;

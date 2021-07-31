@@ -9,12 +9,13 @@
         @include('inc.banner')
         {{--  services block  --}}
         @include('inc.services')
+        {{-- реклама гбо --}}
+        @include('inc.recomendation')
         {{--  examples block  --}}
         @include('inc.examplesBlock')
         {{--стена с записями--}}
         @include('inc.whall')
-        {{-- реклама гбо --}}
-        @include('inc.recomendation')
+
     </div>
     <script>
         function redirect(id) {

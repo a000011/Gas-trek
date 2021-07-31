@@ -1,3 +1,6 @@
+<h2 id="advantages_header">
+    Почему Вы должны поставить ГБО?
+</h2>
 <div class="advantages">
     <table id="rec">
         @foreach ($advantages as $adv)
