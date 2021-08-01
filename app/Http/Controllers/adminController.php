@@ -64,7 +64,7 @@ class adminController extends Controller {
 
 	function addRecord(Request $request){
         $curentDate = Carbon::now()->toDateTimeString();
-
+        $imageName = str_replace([' ', '-', ':'], '_', $curentDate);
         $validator = Validator::make($request->all(), [
             'record_text' => 'required|Min:4',
         ]);
@@ -84,7 +84,7 @@ class adminController extends Controller {
                 'storage/' .
                 $image->storeAs(
                     'whall/',
-                    $curentDate. '.' . $image->extension()
+                    $imageName.'.'.$image->extension()
                 );
             $record = new Whall();
             $record->text = $request->input('record_text');
