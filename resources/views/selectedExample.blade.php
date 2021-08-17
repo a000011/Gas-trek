@@ -8,7 +8,7 @@
         #images{
         }
         img{
-            margin-left: 0px !important;
+            margin-left: 0 !important;
             padding: 0 !important;
         }
         h1, h2{
@@ -25,12 +25,14 @@
         <div id="images" class="col-md-6">
             <img id="mainImg" class="col-12" src="../{{ $data->img[0] }}">
             @foreach ($data->img as $image)
-                <img class="col-2 my-2" onmouseover="changeImg(this);" src="../{{ $image }}">
+                <img class="col-2 my-2" onmouseover="changeImg(this);" onclick="changeImg(this);" src="../{{ $image }}">
             @endforeach
         </div>
         <div class="col-md-6">
-            <h1 class="my-5">Установка ГБО на {{ $data->car_name }}</h1>
-            <h2 class="my-5">Клиент заплатил {{ $data->price }} руб.</h2>
+            <h1 class="my-5">Установка ГБО на:</h1>
+            <h1 style="font-family: 'Roboto', sans-serif">{{ $data->car_name }}</h1>
+            <h2 class="my-5">Цена: </h2>
+            <h2 style="font-family: 'Roboto', sans-serif">{{ $data->price }} руб.</h2>
         </div>
     </div>
     <div class="container" align="center">

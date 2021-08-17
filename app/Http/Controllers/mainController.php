@@ -22,6 +22,7 @@ class mainController extends Controller {
         ['text' => 'Ремонт ГБО', 'icon' => 'home_repair_service'],
     ];
 
+
     function entrance() {
 		$examples = examples::all();
 		foreach ($examples as $ex) {

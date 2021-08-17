@@ -6,6 +6,10 @@ use App\Http\Controllers\exampleController;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\adminController;
 
+//Route::any('/', function (){
+//    return redirect('https://gas-trek.ru/main');
+//});
+
 Route::any('/', [mainController::class, 'entrance'])->name('main');
 
 Route::get('/example/{id}', [exampleController::class, 'showSelected']);

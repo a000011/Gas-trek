@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Keywords" content="ГБО, Тольятти, ГБО тольятти, установка гбо, гбо. установка, авто">
+        <meta name="description" content="Установка и диагностика ГБО в Тольятти.">
+        <meta name="google-site-verification" content="lRzdZFp9yfUbUNKmHXFpG_6IYnf8Yp_84C5N6ZSkego" />
         <title>@yield('title')</title>
         <!-- tab -->
         <link rel="icon" href="images/icon.png">
