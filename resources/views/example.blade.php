@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <div class="row py-5" style="examplesCards d-flex justify-content-center flex-wrap">
+    <div class="row py-5" >
         @include('inc.examples')
     </div>
     <script>

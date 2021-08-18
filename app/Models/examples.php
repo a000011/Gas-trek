@@ -20,10 +20,20 @@ class examples extends Model
     *@return array
     */
     static function parseImgs(string $str){
-        $imgs = array();
+        $imgs = [];
         foreach (explode(';', $str) as $key => $value) {
             if(!empty($value)){
                 array_push($imgs, $value);
+            }
+        }
+        return $imgs;
+    }
+
+    static function parseImgsForHightLevelFolder(string $str){
+        $imgs = [];
+        foreach (explode(';', $str) as $key => $value) {
+            if(!empty($value)){
+                array_push($imgs, '../'.$value);
             }
         }
         return $imgs;

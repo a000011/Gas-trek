@@ -8,26 +8,14 @@
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
+        </ol>
         <div class="carousel-inner">
           <div class="carousel-item active" align="center">
-            <img class="d-block w-100" align="center" src="/images/examples/1.jpg" alt="First slide">
+            <img class="d-block w-100 caruselImg" align="center" src="/images/garage/2.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/images/examples/1.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="/images/examples/1.jpg" alt="Third slide">
+            <img class="d-block w-100 caruselImg" src="/images/garage/1.jpg" alt="Second slide">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
 @endsection

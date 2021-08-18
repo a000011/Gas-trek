@@ -44,6 +44,14 @@
             <img class="col-1" src="/images/icons/inst.png">
         </a>
     </div>
+    <br>
+    <div class="d-flex justify-content-center" style="margin-top: 20px !important;">
+        <h1>Случайные работы:</h1>
+    </div>
+
+    <div class="row py-5 d-flex justify-content-center flex-wrap">
+        @include('inc.examples')
+    </div>
     <script>
         function changeImg(img){
             document.getElementById('mainImg').src = img.src;
