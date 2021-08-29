@@ -9,7 +9,7 @@
         <meta name="google-site-verification" content="lRzdZFp9yfUbUNKmHXFpG_6IYnf8Yp_84C5N6ZSkego" />
         <title>@yield('title')</title>
         <!-- tab -->
-        <link rel="icon" href="images/icon.png">
+        <link rel="icon" href="https://gas-trek.ru/favicon.ico" type="image/x-icon">
 
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
