@@ -5,7 +5,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('adminPanel') }}">Присмеры работ</a>
+                <a class="nav-link" href="{{ route('main') }}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('adminPanel') }}">Добавить пример работ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('adminExamples') }}">Список работ</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('add_record') }}">Новостные записи</a>
