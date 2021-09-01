@@ -23,6 +23,10 @@ class AdminExamplesController extends Controller
             }
         }
         $examples = examples::all();
+        foreach ($examples as $example) {
+            $example->img = examples::parseImgs($example->img);
+        }
+
         return view('admin.adminExamples', ['examples' => $examples, 'action' => $action]);
     }
 }
